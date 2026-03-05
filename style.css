@@ -1,0 +1,170 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f4f4f4;
+  padding: 40px;
+  color: #222;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+/* LANGUAGE TOGGLE */
+
+.lang-toggle {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 18px;
+  justify-content: center;
+}
+
+.lang-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: #f2f2f2;
+  border-color: #cfcfcf;
+}
+
+.lang-btn.is-active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* GRID */
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* CARD */
+
+.day-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.day-card:hover {
+  transform: translateY(-4px);
+}
+
+/* DAY LABEL */
+
+.day-number {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+/* MOVEMENTS */
+
+.movement-list {
+  margin-bottom: 20px;
+}
+
+.movement-list span {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 20px;
+  background: #111;
+  color: white;
+  font-size: 0.85rem;
+}
+
+/* TEXT */
+
+.day-card p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* steps section */
+
+.steps-section {
+  margin-top: 20px;
+}
+
+.steps-section h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* step row */
+
+.step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* step info */
+
+.step-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* step category */
+
+.step-category {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* video button */
+
+.video-link {
+  font-size: 0.85rem;
+  text-decoration: none;
+  background: #111;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.video-link:hover {
+  background: #333;
+}
+
+/* session notes */
+
+.session-notes {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
